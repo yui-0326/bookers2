@@ -1,0 +1,15 @@
+<header>
+  
+</header>
+<main>
+  <div> class="row">
+    <h2>New book</h2>
+    <%= form_with model: @books, local:true do |f| %>
+      <h4>title</h4>
+      <%= f.attachment_field :title %>
+      <h4>Opinion</h4>
+      <%= f.text_field :body %>
+      <%= f.submit 'Create Book' %>
+    <% end %>
+  </div>
+</main>
